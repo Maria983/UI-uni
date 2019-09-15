@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Съществува ли триъгълника?</title>
+    <link rel="stylesheet" type="text/css" href="../../css/solution.css">
+    <script type="text/javascript" src="triangle.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Да се напише програма, която въвежда три реални числа
+            a, b и c, които са страни на триъгълник и дава отговор
+            дали такъв триъгълник съществува, а ако съществува дали
+            е равностранен, равнобедрен или разностранен.</h2>
+    </header>
+    <main>
+        <form id="input">
+            <h2>Моля, въведете дължините на трите страни на триъгълника:</h2>
+            <fieldset>
+                <legend> Изходни параметри</legend>
+                <ul>
+                    <li>
+                        <label for="sideA">Страна А</label>
+                        <input id="sideA" name="sideA" type="number" step="0.01"
+                               min="0" max="100000" maxlength="10" required/>
+                    </li>
+                    <li>
+                        <label for="sideB">Страна B</label>
+                        <input id="sideB" name="sideB" type="number" step="0.01"
+                               min="0" max="100000" maxlength="10" required/>
+                    </li>
+                    <li>
+                        <label for="sideC">Страна C</label>
+                        <input id="sideC" name="sideC" type="number" step="0.01"
+                               min="0" max="100000" maxlength="10" required/>
+                    </li>
+                    <li>
+                        <button type="button" onclick="start()">Провери</button>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend> Резултат</legend>
+                <div id="result"></div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

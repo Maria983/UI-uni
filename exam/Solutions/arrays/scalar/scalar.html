@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Скаларно произведение на два масива</title>
+    <link rel="stylesheet" type="text/css" href="../../css/solution.css">
+    <script type="text/javascript" src="scalar.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Дадени са два едномерни масива a и b.
+            Да се състави масив c, всеки елемент на който
+            е сума от съответните елементи на a и b.
+            Намерете скаларното произведение на a и b.</h2>
+    </header>
+    <main>
+        <form id="input">
+            <h2>Моля, въведете число за броя на елементите на масивите</h2>
+            <fieldset>
+                <legend> Условие</legend>
+                <ul>
+                    <li>
+                        <label for="arr">Брой елементи</label>
+                        <input id="arr" name="arr" type="number"
+                               min="3" max="100" maxlength="3" required/>
+                    </li>
+                    <li>
+                        <button type="button" onclick="start()">Изчисли</button>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend> Първи масив</legend>
+                <div id="array0"></div>
+            </fieldset>
+            <fieldset>
+                <legend> Втори масив</legend>
+                <div id="array1"></div>
+            </fieldset>
+            <fieldset>
+                <legend> Сумарен масив</legend>
+                <div id="array2"></div>
+            </fieldset>
+            <fieldset>
+                <legend> Скаларно произведение</legend>
+                <div id="result"></div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

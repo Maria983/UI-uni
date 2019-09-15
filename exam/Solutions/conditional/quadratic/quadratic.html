@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>Корени на квадратно уравнение</title>
+    <link rel="stylesheet" type="text/css" href="../../css/solution.css">
+    <script type="text/javascript" src="quadratic.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Да се състави програма за пресмятане корените на квадратно уравнение ax<span class="sup">2</span> + bx + c = 0</h2>
+    </header>
+    <main>
+        <form id="input">
+            <h2>Моля, въведете параметрите на квадратното уравнение:</h2>
+            <fieldset>
+                <legend> Параметри</legend>
+                <ul>
+                    <li>
+                        <label for="paramA">Параметър А</label>
+                        <input id="paramA" name="paramA" type="number" step="0.01"
+                               min="-100000" max="100000" maxlength="10" required/>
+                    </li>
+                    <li>
+                        <label for="paramB">Параметър B</label>
+                        <input id="paramB" name="paramB" type="number" step="0.01"
+                               min="-100000" max="100000" maxlength="10" required/>
+                    </li>
+                    <li>
+                        <label for="paramC">Параметър C</label>
+                        <input id="paramC" name="paramC" type="number" step="0.01"
+                               min="-100000" max="100000" maxlength="10" required/>
+                    </li>
+                    <li>
+                        <button type="button" onclick="start()">Изчисли</button>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend> Резултат</legend>
+                <div id="result"></div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

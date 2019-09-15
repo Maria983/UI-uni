@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Брой на дните в месеца</title>
+    <link rel="stylesheet" type="text/css" href="../../css/solution.css">
+    <script type="text/javascript" src="date.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Да се състави програма, която по въведен номер на месец извежда
+            на екрана името на месеца и броя на неговите дни. За определяне
+            на дните през месец февруари допълнително ще се въвежда и годината.</h2>
+    </header>
+    <main>
+        <form id="input">
+            <h2>Моля, въведете месец и година:</h2>
+            <fieldset>
+                <legend> Месец и година</legend>
+                <ul>
+                    <li>
+                        <label for="month">Месец</label>
+                        <input id="month" name="month" type="number"
+                               min="1" max="12" maxlength="2" required/>
+                    </li>
+                    <li>
+                        <label for="year">Година</label>
+                        <input id="year" name="year" type="number"
+                               min="1" max="9999" maxlength="4" required/>
+                    </li>
+                    <li>
+                        <button type="button" onclick="start()">Изчисли</button>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend> Резултат</legend>
+                <div id="result"></div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

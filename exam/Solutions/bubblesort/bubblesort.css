@@ -1,0 +1,30 @@
+@import url('https://fonts.google.com/selection?selection.family=Lato');
+
+body {
+    font: 14px 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2  {
+    text-align: center;
+}
+
+#startarray   {
+    color: cornflowerblue;
+}
+
+.current {
+    color: darkred;
+}
+
+fieldset {
+    color: blue;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+}

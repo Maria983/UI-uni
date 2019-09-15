@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сума на редица</title>
+    <link rel="stylesheet" type="text/css" href="../../css/solution.css">
+    <script type="text/javascript" src="rowsum.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Да се състави алгоритъм и напише код на JavaScript
+            за изчисляване сумата на редицата S = x +
+            x<span class="sup">2</span> + x<span class="sup">3
+            </span> + ... + x<span class="sup">n</span></h2>
+    </header>
+    <main>
+        <form id="input">
+            <h2>Моля, въведете число по избор:</h2>
+            <fieldset>
+                <legend> Вашето число</legend>
+                <ul>
+                    <li>
+                        <label for="choice">Въведете</label>
+                        <input id="choice" name="choice" type="number"
+                               min="1" max="100000" maxlength="6" required/>
+                    </li>
+                    <li>
+                        <button type="button" onclick="start()">Изчисли</button>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend> Резултат</legend>
+                <div id="result"></div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

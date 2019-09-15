@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>UI Bubble Sort</title>
+    <link rel="stylesheet" type="text/css" href="bubblesort.css"/>
+    <script type="text/javascript" src="bubblesort.js"></script>
+</head>
+<body>
+<header>
+    <form id="input">
+        <h1>Сортиране на масив по метода на мехурчето</h1>
+        <fieldset>
+            <legend> Изходни параметри</legend>
+            <ul>
+                <li>
+                    <label for="arraylength">Брой на елементи</label>
+                    <input id="arraylength" name="arraylength" type="number" min="10" max="100" maxlength="3"
+                           placeholder="40" value="40" required/>
+                    <button type="button" onclick="starting()">Нов масив</button>
+                </li>
+                <li>
+                    <label for="sortspeed">Времезакъснение</label>
+                    <input id="sortspeed" name="sortspeed" type="number" min="10" max="100" maxlength="3"
+                           placeholder="200" value="200" required/>
+                    <button type="button" onclick="processing()">Сортиране</button>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</header>
+<main>
+    <fieldset>
+        <legend> Стартов масив</legend>
+        <div id="startarray"></div>
+    </fieldset>
+    <fieldset>
+        <legend> Краен масив</legend>
+        <div id="resultarray"></div>
+    </fieldset>
+</main>
+</body>
+</html>

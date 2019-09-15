@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Най голям или най-малък елемент от масив</title>
+    <link rel="stylesheet" type="text/css" href="../../css/solution.css">
+    <script type="text/javascript" src="arraymost.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Да се  намери най-голямата или най-малката стойност от масив със стойности.</h2>
+    </header>
+<main>
+    <form id="input">
+        <h2>Моля, въведете число за броя на елементите на масива</h2>
+        <fieldset>
+            <legend> Условие</legend>
+            <ul>
+                <li>
+                    <label for="arr">Брой елементи</label>
+                    <input id="arr" name="arr" type="number"
+                           min="3" max="100" maxlength="3" required/>
+                </li>
+                <li>
+                    <label for="who">Търсим</label>
+                    <select id="who" name="who">
+                        <option value="1">най-голям</option>
+                        <option value="0">най-малък</option>
+                    </select>
+                </li>
+                <li>
+                    <button type="button" onclick="start()">Изчисли</button>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend> Масив</legend>
+            <div id="array"></div>
+        </fieldset>
+        <fieldset>
+            <legend> Резултат</legend>
+            <div id="result"></div>
+        </fieldset>
+    </form>
+</main>
+</body>
+</html>

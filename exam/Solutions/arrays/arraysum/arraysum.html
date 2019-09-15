@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сумиране на елементите на масив</title>
+    <link rel="stylesheet" type="text/css" href="../../css/solution.css">
+    <script type="text/javascript" src="arraysum.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Да се напише програма за намиране на сумата на елементите на даден масив.</h2>
+    </header>
+    <main>
+        <form id="input">
+            <h2>Моля, въведете число за броя на елементите на масива</h2>
+            <fieldset>
+                <legend> Условие</legend>
+                <ul>
+                    <li>
+                        <label for="arr">Брой елементи</label>
+                        <input id="arr" name="arr" type="number"
+                               min="3" max="100" maxlength="3" required/>
+                    </li>
+                    <li>
+                        <button type="button" onclick="start()">Изчисли</button>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend> Масив</legend>
+                <div id="array"></div>
+            </fieldset>
+            <fieldset>
+                <legend> Резултат</legend>
+                <div id="result"></div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@import url('https://fonts.google.com/selection?selection.family=Lato');
+
+body {
+    font: 14px 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+header > h2 {
+    text-align: justify;
+}
+
+h1, h2  {
+    text-align: center;
+}
+
+#result   {
+    color: darkred;
+}
+
+#array {
+    color: darkblue;
+}
+
+#array0 {
+    color: darkblue;
+}
+
+#array1 {
+    color: darkblue;
+}
+
+#array2 {
+    color: darkmagenta;
+}
+
+.sup {
+    vertical-align: super;
+    font-size: small;
+}
+
+fieldset {
+    margin-left: 30%;
+    margin-right:30%;
+    color: blue;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+li {
+    margin-right: 10px;
+}
+
+input {
+    text-align:right;
+}

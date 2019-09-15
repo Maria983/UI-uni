@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Дата в миналото</title>
+    <link rel="stylesheet" type="text/css" href="../../css/solution.css">
+    <script type="text/javascript" src="pastdate.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Да се състави програма, която по въведена дата изчислява предхождащата я дата с n на брой дни.</h2>
+    </header>
+    <main>
+        <form id="input">
+            <h2>Моля, въведете дата и брой дни</h2>
+            <fieldset>
+                <legend> Дата и дни</legend>
+                <ul>
+                    <li>
+                        <label for="date">Дата</label>
+                        <input id="date" name="date" type="date" required/>
+                    </li>
+                    <li>
+                        <label for="days">Дни</label>
+                        <input id="days" name="days" type="number"
+                               min="1" max="9999" maxlength="4" required/>
+                    </li>
+                    <li>
+                        <button type="button" onclick="start()">Изчисли</button>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend> Резултат</legend>
+                <div id="result"></div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
